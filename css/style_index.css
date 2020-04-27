@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Montserrat');
+
+#container {
+    margin: 1rem auto;
+    max-width: 600px;
+    font-size: 18px;
+    padding: 2em;
+    font-family: Alegreya Sans, Montserrat, sans-serif;
+}
+
+header, footer{
+    background-color: #18615c;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+header img{
+    float: right;
+    width: 150px;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+main {
+    margin-left: 3em;
+}
+
+footer {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+footer a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+main ul li a {
+    color: darkslategrey;
+}
+
