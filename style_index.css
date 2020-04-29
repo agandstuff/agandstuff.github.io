@@ -17,7 +17,6 @@ header, footer{
 }
 
 header img{
-    float: right;
     width: 150px;
     box-shadow: 5px 5px 2px black;
     border-radius: 10px;
