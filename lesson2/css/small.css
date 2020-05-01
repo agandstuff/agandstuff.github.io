@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|DM+Sans');
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body rules here */
+body {
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation rules here */
+a {
+    text-decoration: none;
+    color: darkslategray;
+    padding: 0 1em 1em 0;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* header rules here*/
+header {
+    font-family: Varela Round, DM Sans, sans-serif;
+    background-color: #151E3F;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2px;
+}
+
+.column {
+    margin: 1em;
+    background-color: #D8DBE2;
+    border-radius: 10px;
+}
+
+.column-header {
+    background-color: #444B6E;
+    color: whitesmoke;
+    padding: 1rem 2%;
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+    padding-left: 1em;
+}
+
+div span {
+    margin-left: 1em;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+section figure {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    box-shadow: 5px 5px #bbb;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .88rem;
+}
+
+div p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* footer rules here */
+footer {
+    font-family: Varela Round, DM Sans, sans-serif;
+    background-color: #151E3F;
+    color: whitesmoke;
+    padding: .5rem 2%;
+    text-align: center;
+}
