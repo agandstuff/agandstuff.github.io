@@ -25,4 +25,9 @@
         nav ul li a{
             padding: .5rem 1rem;
         }
+    
+    /* MAIN */
+        #domain {
+            width: 70%;
+        }
     } /* end of media query */
