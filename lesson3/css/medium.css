@@ -1,0 +1,28 @@
+@media only screen and (min-width: 35rem) { 
+    /* HEADER */
+    header img {
+        width: 200px;
+    }
+    
+    header h1 {
+        font-size: 40pt;
+        margin-top: 1.5rem;
+    }
+    
+    header h2 {
+        font-size: 20pt;
+    }
+        
+    /* NAVIGATION */
+        nav ul {
+            margin-left: 5%;
+        }
+
+        nav ul li {
+            float: left;
+        }
+    
+        nav ul li a{
+            padding: .5rem 1rem;
+        }
+    } /* end of media query */
