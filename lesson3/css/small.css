@@ -1,0 +1,43 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* BODY */
+body {
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+header {
+    padding: .5rem 2%;
+    background-color: lightblue;
+}
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+header h1 {
+    margin: 0;
+    font-size: 13rem;
+}
+
+/* NAVIGATION */
+
+/* MAIN */
+
+/* FOOTER */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
