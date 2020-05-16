@@ -49,8 +49,8 @@ header img {
 
 /* NAVIGATION */
 nav {
-    background: rgb(98,144,195);
-    background: radial-gradient(circle, rgba(98,144,195,1) 0%, rgba(5,74,145,1) 84%); 
+    background: rgb(5,74,145);
+    background: linear-gradient(35deg, rgba(5,74,145,1) 19%, rgba(98,144,195,1) 100%);
     font-family: Open Sans, sans-serif;
 }
 
@@ -107,8 +107,8 @@ main h1 {
 }
 
 main section {
-    background: rgb(98,144,195);
-    background: radial-gradient(circle, rgba(98,144,195,1) 0%, rgba(5,74,145,1) 84%); 
+    background: rgb(5,74,145);
+    background: linear-gradient(35deg, rgba(5,74,145,1) 19%, rgba(98,144,195,1) 100%);
     border-radius: 10px;
     padding: 1rem;
     color: #eee;
