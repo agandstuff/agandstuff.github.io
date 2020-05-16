@@ -64,7 +64,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #eee;
+    color: white;
 }
 
 nav ul.hide {
@@ -73,7 +73,7 @@ nav ul.hide {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: white;
     padding: .5rem 0;
     text-decoration: none;
     font-size: 14pt;
@@ -91,7 +91,7 @@ nav ul li a:hover {
 
 nav ul li.active a {
     background-color: #6290c3;
-    color: #fff;
+    color: white;
     font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ main section {
     background: rgb(5,55,106);
     background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    border-radius: 10px;
     padding: 1rem;
-    color: #eee;
+    color: white;
     margin-bottom: 1rem;
 }
 
@@ -119,6 +119,7 @@ footer {
     padding: .5rem 2%;
     text-align: center;
     font-size: 10pt;
+    color: #333;
 }
 
 .clearfix:after {
