@@ -1,0 +1,11 @@
+@media only screen and (min-width: 64rem) {
+    main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }  
+
+    nav ul li a {
+        padding: .6rem 1rem;
+        font-size: 12pt;
+    }
+} /* end of media query */
