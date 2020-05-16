@@ -1,6 +1,5 @@
 @media (min-width: 32.5em) {
-    header img{
+    #container header img{
         float: right;
     }
-    
 }
