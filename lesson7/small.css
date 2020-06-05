@@ -1,0 +1,29 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    justify-items: center;
+}
+
+header {
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-row: 2 / 3;
+    max-width: 300px;
+}
+
+main picture {
+    max-width: 300px;
+}
