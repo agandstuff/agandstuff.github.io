@@ -29,10 +29,10 @@ main picture {
 }
 
 picture img {
-    filter: blur(2em);
+    filter: blur(0.2em);
 }
 
 picture img[data-src] {
-    filter: blur(0em);
+    filter: blur(0);
     transition: filter 0.5s;
 }
