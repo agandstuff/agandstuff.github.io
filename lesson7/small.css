@@ -29,7 +29,7 @@ main picture {
 }
 
 picture img {
-    filter: blur(0.5em);
+    filter: blur(2em);
 }
 
 picture img[data-src] {
