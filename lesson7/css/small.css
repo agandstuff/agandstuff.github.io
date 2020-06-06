@@ -1,0 +1,268 @@
+/*@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans'); */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+div#message {
+    background: rgb(5,55,106);
+    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    font-family: Open Sans, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+div.showme {display: block;}
+
+div.hideme {display: none;}
+
+/* BODY */
+body {
+    font-family: Open Sans, sans-serif;
+    color: #333;
+    background-color: whitesmoke;
+}
+
+/* HEADER */
+header {
+    background-color: #c1dff0;
+    font-family: Pacifico, Open Sans, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin: 1em;
+}
+
+#headings {
+    display: flex;
+    flex-direction: column;
+}
+
+#headings h1, h2 {
+    margin: 0;
+}
+
+#headings h2 {
+    font-size: 12pt;
+    margin-top: 5px;
+}
+
+/* NAVIGATION */
+nav {
+    background: rgb(5,55,106);
+    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    font-family: Open Sans, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .4rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 14pt;
+    padding-left: 2rem;
+    transition-property: color, background-color;
+    transition-duration: 350ms;
+}
+
+nav ul li:first-child {
+    border-top: 1px solid #333;
+}
+
+nav ul li a:hover {
+    background-color: #91c4f2;
+    color: #333;
+}
+
+nav ul li.active a {
+    background-color: #325885;
+    color: white;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: Pacifico, Open Sans, sans-serif;
+    margin-bottom: 2rem;
+}
+
+main div.heroDiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+div.heroDiv picture {
+    display: block;
+    width: 100%;
+}
+
+div.heroDiv picture img {
+    width: 100%;
+}
+
+main table {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid darkslategray;
+    box-shadow: 0 0 10px #333;
+    opacity: .8;
+    background: rgb(5,55,106);
+    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    color: whitesmoke;
+    padding: 1rem 2%;
+}
+
+main table tr th {
+    padding-bottom: 10px;
+}
+
+main table tr td:first-child {
+    text-align: right;
+}
+
+main section {
+    background: rgb(5,55,106);
+    background: linear-gradient(180deg, rgba(5,55,106,1) 13%, rgba(29,79,130,1) 75%, rgba(42,91,142,1) 88%, rgba(98,144,195,1) 100%);    
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+section.forecast {
+    display: none;
+}
+
+article {
+    padding: 2rem 4%;
+    background-color: #91c4f2;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: .5em;
+}
+
+article p#author {
+    font-size: 10pt;
+}
+
+article figure {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+article figure img {
+    width: 100%;
+    box-shadow: 5px 5px 15px #333;
+}
+
+#contactInfo {
+    background: rgb(5,55,106);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 1rem 3%;
+    font-size: 12px;
+}
+
+div#contact {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 60px 60px; 
+}
+
+div#address {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+div#phone {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+div#email {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+div#map {
+    width: 100%;
+    display: none;
+}
+
+div#map iframe {
+    width: 100%;
+}
+
+/* GALLERY MAIN */
+main.gallery h1 {
+    padding-left: 0.5em;
+}
+
+div.gallery figure {
+    margin: 0 auto;
+    margin-bottom: 2em; 
+    width: 80%;
+    box-shadow: 0 0 10px black;
+}
+
+div.gallery figure img {
+    width: 100%;
+}
+
+div.gallery figure figcaption {
+    font-size: 14px;
+    padding: 0.5em;
+}
+
+/* FOOTER */
+footer {
+    background-color: #c1dff0;
+    padding: .5rem 2%;
+    text-align: center;
+    font-size: 10pt;
+    color: #333;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

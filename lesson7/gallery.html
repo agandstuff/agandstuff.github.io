@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainCasters: Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div id="message"><h3>Saturday = Preston Pancakes in the Park! </h3> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/logo.png" alt="RainCasters Logo">
+        <section id="headings">
+            <h1>RainCasters</h1>
+            <h2>Know When to Dance in the Rain</h2>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="x">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="x">Soda Springs</a></li>
+            <li><a href="x">Fish Haven</a></li>
+            <li><a href="x">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="gallery">
+        <h1>Weather Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/placeholder.png" alt="Snow Orb" data-src="images/small/snoworb500.jpg">
+                <figcaption>Frozen water droplet</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Lightning" data-src="images/small/lightning500.jpg">
+                <figcaption>Lightning during a storm</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Mist" data-src="images/small/mist500.jpg">
+                <figcaption>Mist in the morning</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Rain" data-src="images/small/rain500.jpg">
+                <figcaption>Rainy day in the city</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Rainbow" data-src="images/small/rainbow500.jpg">
+                <figcaption>Rainbow and waterfall</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Snow" data-src="images/small/snow500.jpg">
+                <figcaption>Snowy country road</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Fog" data-src="images/small/fog500.jpg">
+                <figcaption>Fog on the hill</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Storm" data-src="images/small/storm500.jpg">
+                <figcaption>Nasa storm system</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" alt="Sunny" data-src="images/small/sunny500.jpg">
+                <figcaption>Sunny day</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        &copy; Amanda Stokes | <span id="currentDate"></span>
+    </footer>
+    <script src="js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load ({google: {families: ['Pacifico','Open Sans']}});</script>  
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyimages.js"></script>
+</body>
+</html>
