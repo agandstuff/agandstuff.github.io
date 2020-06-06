@@ -62,7 +62,7 @@
     }
 
     div div#map {
-        display: inline-block;
+        display: block;
         float: right;
         width: 40%;
         clear: both;
