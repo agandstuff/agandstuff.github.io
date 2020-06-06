@@ -93,6 +93,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 14pt;
     padding-left: 2rem;
+    transition-property: color, background-color;
+    transition-duration: 350ms;
 }
 
 nav ul li:first-child {
