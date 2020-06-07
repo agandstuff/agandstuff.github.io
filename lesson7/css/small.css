@@ -243,8 +243,14 @@ div.gallery figure {
     box-shadow: 0 0 10px black;
 }
 
+div.gallery figure img[data-src] {
+    filter: blur(0.2em);
+}
+
 div.gallery figure img {
     width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 div.gallery figure figcaption {
