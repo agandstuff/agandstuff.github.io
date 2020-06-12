@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|UbuntuBold');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+table {
+    box-shadow: 10px 10px 15px #628ca6;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+    padding: 8px;
+}
+
+thead {
+    background-color: #7fb9c2;
+    font-size: 18pt;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+
+tbody tr:first-child {
+    background-color: #628ca6;
+    color: white;
+}
+
+#sales-goal {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(3), tr:nth-child(5), tr:nth-child(7) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(6) td:first-child {
+    font-style: italic;
+}
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 8pt;
+    text-align: center;
+}
