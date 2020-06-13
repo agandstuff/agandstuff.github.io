@@ -1,0 +1,33 @@
+@media only screen and (min-width: 64rem) {
+    main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }  
+
+    nav ul li a {
+        padding: .6rem 1rem;
+        font-size: 12pt;
+    }
+
+    div div#map {
+        width: 50%;
+    }
+
+    div.gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.gallery figure {
+        width: 100%;
+    }
+
+    div.gallery figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    form label.sbs {
+        padding: .2rem 0;
+    }
+} /* end of media query */
