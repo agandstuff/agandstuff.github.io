@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainCasters: Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div id="message"><h3>Saturday = Preston Pancakes in the Park! </h3> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img src="images/logo.png" alt="RainCasters Logo">
+        <section id="headings">
+            <h1>RainCasters</h1>
+            <h2>Know When to Dance in the Rain</h2>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="x">Soda Springs</a></li>
+            <li><a href="x">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1>Send Us A Storm Report</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" required pattern="[A-Za-z]{5,*} "></label>
+                <label class="top">Phone <input type="tel" name="tel" placeholder="xxx-xxx-xxx"></label>
+                <label class="top">Email* <input type="email" name="email" required placeholder="example@gmail.com"></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label class="top">Date of Storm <input type="date" name="date"></label>
+                <label class="top">Storm Type <input list="storms"> 
+                    <datalist id="storms">
+                        <option value="Flash Flood">Flash Flood</option>
+                        <option value="Hail">Hail</option>
+                        <option value="Hurricane">Hurricane</option>
+                        <option value="Thunderstorm">Thunderstorm</option>
+                        <option value="Tornado">Tornado</option>
+                    </datalist>
+                </label>
+                <div class="top">Storm Severity</div>
+                <label class="sbs"><span>1&nbsp;</span><input id="rating" type="range" name="range" value="5" min="1" max="10" step="1" list="steplist" oninput="changeRating(this.value)" onchange="changeRating(this.value)"> <span>&nbsp;10</span><br>
+                <span id="ratingValue">5</span>
+                    <datalist id="steplist">
+                        <option value="1" label="1">1</option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5">5</option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10" label="10">10</option>
+                    </datalist>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                            <option value="" selected="" disabled>Select Region...</option>
+                        <option value="fish">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                    </select>
+                </label>
+                <div class="top">Are You In Danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Any Further Comments? <br>
+                    <textarea name="comments" class="top" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Send My Report" class="submitButton">
+        </form>
+    </main>
+    <footer>
+        &copy; Amanda Stokes | <span id="currentDate"></span>
+    </footer>
+    <script src="js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load ({google: {families: ['Pacifico','Open Sans']}});</script>  
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyimages.js"></script>
+</body>
+</html>

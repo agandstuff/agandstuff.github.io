@@ -65,7 +65,7 @@ footer {
 
 @media only screen and (min-width: 62rem) {
     main {
-        width: 96;
+        width: 96px;
     }
 
     .cards {
