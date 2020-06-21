@@ -30,4 +30,20 @@
     form label.sbs {
         padding: .2rem 0;
     }
+
+    section.towncards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section.towncards div{
+        display: block;
+        padding: 15px;
+        border-bottom: 0;
+        border-right: 1px solid #333;
+    }
+
+    section.towncards div:last-child {
+        border-right: 0;
+    }
 } /* end of media query */
