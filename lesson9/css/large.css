@@ -46,4 +46,8 @@
     section.towncards div:last-child {
         border-right: 0;
     }
+
+    section.towncards div:last-child h5 {
+        font-size: 9pt;
+    }
 } /* end of media query */
