@@ -81,4 +81,30 @@
         padding: .3rem 0;
     }
 
+    section.towncards div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    section.towncards div h1, h5, p {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    section.towncards div img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 90%;
+    }
+
+    section.towncards div:nth-child(2) img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    section.towncards div:nth-child(2) h1, h5, p {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 } /* end of media query */
