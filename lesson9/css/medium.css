@@ -81,30 +81,33 @@
         padding: .3rem 0;
     }
 
+    section.towncards {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
     section.towncards div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
     }
 
-    section.towncards div h1, h5, p {
+    div.info {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
     }
 
+    div.info:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+
+    div img:nth-child(2) {
+        grid-column: 1 / 2;
+    }
+    
     section.towncards div img {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        width: 90%;
-    }
-
-    section.towncards div:nth-child(2) img{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    section.towncards div:nth-child(2) h1, h5, p {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        width: 95%;
     }
 } /* end of media query */

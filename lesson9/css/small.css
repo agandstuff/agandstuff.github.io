@@ -247,6 +247,10 @@ section.towncards div:last-child {
     border-bottom: 0;
 }
 
+section.towncards div.info {
+    border-bottom: 0;
+}
+
 section.towncards img {
     display: block;
     width: 300px;
