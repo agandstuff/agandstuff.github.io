@@ -50,4 +50,8 @@
     section.towncards div:last-child h5 {
         font-size: 9pt;
     }
+
+    section.towncards div.info {
+        border-right: 0;
+    }
 } /* end of media query */
