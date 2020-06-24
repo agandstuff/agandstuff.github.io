@@ -47,7 +47,7 @@ fetch(requestURL)
                 motto.textContent = towns[i].motto;
                 date.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 pop.textContent = 'Population: ' + towns[i].currentPopulation;
-                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '"';
                 image.setAttribute('src', towns[i].photo);
                 image.setAttribute('alt', towns[i].name + ' Hometown');
 
