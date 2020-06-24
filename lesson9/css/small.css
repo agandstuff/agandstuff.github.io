@@ -233,25 +233,28 @@ div#map iframe {
 }
 
 /* HOME MAIN */
-section.towncards {
+.towncards {
     margin: 18px;
     text-align: center;
 }
 
-section.towncards div {
+.towncards article {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
     border-bottom: 2px solid #333;
     padding-bottom: 30px;
 }
 
-section.towncards div:last-child {
+.towncards article:last-child {
     border-bottom: 0;
 }
 
-section.towncards div.info {
+.towncards .info {
     border-bottom: 0;
 }
 
-section.towncards img {
+.towncards img {
     display: block;
     width: 300px;
     margin: 0 auto;
@@ -259,18 +262,18 @@ section.towncards img {
     margin-top: 20px;
 }
 
-section.towncards h1 {
+.towncards h1 {
     margin-bottom: 15px;
     font-size: 28pt;
 }
 
-section.towncards h5 {
+.towncards h5 {
     margin-top: 0;
     margin-bottom: 30px;
     font-style: italic;
 }
 
-section.towncards p {
+.towncards p {
     font-size: 11pt;
 }
 /* GALLERY MAIN */

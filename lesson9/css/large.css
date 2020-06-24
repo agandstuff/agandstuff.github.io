@@ -31,29 +31,29 @@
         padding: .2rem 0;
     }
 
-    section.towncards {
+    .towncards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100%;
         grid-gap: 0;
     }
 
-    section.towncards div{
+    .towncards article{
         display: block;
         padding: 15px;
         border-bottom: 0;
         border-right: 1px solid #333;
     }
 
-    section.towncards div:last-child {
+    .towncards article:last-child {
         border-right: 0;
     }
 
-    section.towncards div:last-child h5 {
-        font-size: 9pt;
+    .towncards article:last-child h5 {
+        font-size: 8pt;
     }
 
-    section.towncards div.info {
+    .towncards .info {
         border-right: 0;
     }
 } /* end of media query */

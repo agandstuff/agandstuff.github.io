@@ -33,7 +33,7 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
             if (i == 1 || i == 4 || i == 5) {
-                let card = document.createElement('div');
+                let card = document.createElement('article');
                 let info = document.createElement('div');
                 let name = document.createElement('h1');
                 let motto = document.createElement('h5');
