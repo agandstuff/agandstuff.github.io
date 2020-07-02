@@ -1,0 +1,113 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 38rem) {
+    header {
+        font-size: 20pt;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: .5%;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+        font-size: 11pt;
+    }
+
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    section.forecast div {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        border-right: 1px solid whitesmoke;
+    }
+
+    section.forecast div:last-child {
+        border-right: none;
+    }
+
+    section.forecast div span {
+        font-family: Pacifico, sans-serif;
+        font-size: 15pt;
+    }
+
+    section.forecast div p {
+        margin: 0;
+    }
+
+    section.forecast img {
+        width: 75px;
+    }
+
+    article figure {
+        float: right;
+        width: 60%;
+        margin: 1em;
+    }
+
+    div div#map {
+        display: block;
+        float: right;
+        width: 40%;
+        clear: both;
+    }
+
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.gallery figure {
+        width: 90%;
+    }
+
+    form label.sbs {
+        padding: .3rem 0;
+    }
+
+    .towncards article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .towncards article img {
+        width: 90%;
+    }
+    .towncards article:nth-child(2) img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .towncards article:nth-child(2) .info {
+        grid-column: 2;
+    }
+} /* end of media query */
