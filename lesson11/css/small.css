@@ -194,6 +194,25 @@ article figure img {
     box-shadow: 5px 5px 15px #333;
 }
 
+article h2 {
+    font-family: Pacifico, sans-serif;
+    font-size: 24pt;
+}
+
+section.prestonEvents, section.fishEvents, section.sodaEvents {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+}
+section.prestonEvents h2, section.fishEvents h2, section.sodaEvents h2 {
+    font-family: Pacifico, sans-serif;
+    font-size: 22pt;
+    border-bottom: .5px solid whitesmoke;
+    padding-bottom: 20px;
+}
+
 #contactInfo {
     background: rgb(5,55,106);
     color: whitesmoke;

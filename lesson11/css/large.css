@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64rem) {
-    main, footer {
+    main {
         max-width: 64rem;
-        margin:auto;
+        margin: auto;
     }  
 
     nav ul li a {
