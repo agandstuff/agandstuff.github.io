@@ -1,0 +1,408 @@
+/* COLOR SCHEME 
+    RED: #F71B2E
+    PINK: #F60782
+    ORANGE: #F18701
+    PURPLE: #87247B
+    GREEN: #62B932
+    BLUE: #249FB0
+*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+div.showme {display: block;}
+div.hideme {display: none;}
+
+/* BODY */
+body {
+    font-family: Oswald, sans-serif;
+    color: #222;
+    background-color: whitesmoke;
+}
+
+/* HEADER */
+header picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+header picture img {
+    width: 100%;
+}
+
+div#logoNav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #333;
+    opacity: .9;
+}
+
+div#logoNav img {
+    width: 100px;
+    margin: .5rem 2%;
+    margin-left: 10px;
+    grid-column: 1 / 2;
+}
+
+div#logoNav h1 {
+    grid-column: 2 / 3;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 400%;
+    font-family: Amatic SC;
+    margin: 0;
+    padding-left: 30px;
+}
+
+/* NAV */
+div#logoNav nav {
+    grid-column: 3 / 4;
+    text-align: right;
+}
+
+div#logoNav nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 1.5rem;
+    float: right;
+    clear: both;
+}
+
+div#logoNav nav ul li a {
+    display: block;
+    color: whitesmoke;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 14pt;
+    text-align: right;
+    padding-right: 10px;
+    transition-property: color, background-color;
+    transition-duration: 450ms;
+    width: 115px;
+}
+
+div#logoNav nav ul li a#red:hover {
+    color: #f71b2e;
+}
+
+div#logoNav nav ul li a#ora:hover {
+    color: #F18701;
+}
+
+div#logoNav nav ul li a#pur:hover {
+    color: #87247B;
+}
+
+div#logoNav nav ul li a#gre:hover {
+    color: #62B932;
+}
+
+div#logoNav nav ul li a#blu:hover {
+    color: #249FB0;
+}
+
+div#logoNav nav ul li.active a {
+    box-shadow: inset 0px 0 3px 2px #333;
+    background-color: #111;
+    font-weight: bold;
+}
+
+div#logoNav button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+div#logoNav nav ul.hide {
+    display: none;
+}
+
+/* MAIN */
+main {
+    text-align: center;
+}
+main h2 {
+    font-family: Amatic SC, sans serif;
+    font-size: 30pt;
+}
+
+/* HOME - Social */
+.social {
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    right: 0;
+    background-color: lightgrey;
+    padding: 2px;
+    opacity: .8;
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+.social a {
+    display: block;
+}
+
+/* HOME - Rentals */
+form input.homeSubmitButton {
+    border: none;
+    background-color: #8f101a;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding: .5rem .75rem;
+    max-width: 20rem;
+}
+
+div.rental {
+    position: relative;
+    max-width: 400px;
+    margin: 3em auto;
+    box-shadow: 5px 5px 10px 5px #333;
+}
+
+div.rental:hover {
+    box-shadow: 0 0 30px #8f101a;
+}
+
+div.rental picture{
+    max-width: 80%;
+    overflow: hidden;
+}
+
+div.rental picture img {
+    width: 100%;
+    height: 100%;
+}
+
+div.rental span.price {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: whitesmoke;
+    box-shadow: inset 0 0 19px 2px #999;
+    background-color: #555;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    opacity: .9;
+}
+
+/* HOME - Weather */
+section.weather table{
+    margin: auto;
+    text-align: left;
+}
+
+section.weather table th {
+    font-family: Amatic SC, sans-serif;
+    font-size: 30pt;
+    border-bottom: 1px solid #f71b2e;
+}
+
+section.weather table tr td:first-child {
+    text-align: right;
+}
+
+section#forecast {
+    display: grid;
+    box-shadow: 5px 5px 10px 3px #333;
+    border-radius: 10px;
+    margin: 2rem 25%;
+    padding: 0;
+}
+
+section#forecast h2 {
+    font-size: 22pt;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #f71b2e;
+}
+
+section#forecast div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    padding-top: 5px; 
+    margin: 0 15px 0 15px;
+}
+
+section#forecast div:last-child {
+    border-bottom: none;
+}
+
+section#forecast div span {
+    font-family: Amatic SC, sans-serif;
+    font-size: 18pt;
+}
+
+section#forecast div p {
+    margin: 0;
+}
+
+/* HOME - Contact */
+#contactInfo {
+    width: 380px;
+    margin: auto;
+}
+
+article.shop {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    padding: 0;
+    margin: 1rem;
+    background-color: #f71b2e;
+    opacity: .9;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #8f101a;
+}
+
+article.shop h2 {
+    grid-column: 1 / 3;
+    font-size: 20pt;
+    margin: 0;
+    padding-top: .5rem;
+}
+
+article.shop p, h4{
+    padding: 0;
+    margin: .7rem;
+    font-weight: 200;
+}
+
+article.shop p {
+    text-align: left;
+}
+
+article.shop h4 {
+    text-align: right;
+}
+
+/* RENTAL MAIN */
+.rentalsPage article {
+    text-align: left;
+    background-color: #F18701;
+    color: whitesmoke;
+    margin: 2rem 6%;
+    border-radius: 12px;
+    padding: .3rem;
+    box-shadow: 0 0 2px 2px #a55e00;
+}
+
+/* CONTACT MAIN */
+#contactPage form {
+    margin: 1.5rem 8%;
+}
+
+form fieldset {
+    border: 2px solid #249FB0;
+    border-radius: 15px;
+    padding: 1rem 2%;
+}
+
+form legend {
+    color: #333;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px gray;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: .5rem;
+    color: #1b727e;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitButton {
+    border: none;
+    background-color: #1b727e;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    max-width: 20rem;
+}
+
+article.blue {
+    background-color: #249FB0;
+    box-shadow: 0 0 2px 2px #1b727e;
+    padding-top: 1rem;
+}
+
+article div.map {
+    grid-column: 1 / 3;
+    margin: auto;
+    box-shadow: 0 0 2px 2px #1b727e;
+    width: 250px;
+}
+
+article div.map iframe {
+    display: block;
+    width: 100%;
+}
+
+/* FOOTER */
+#thanksFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+    width: 100%;
+    opacity: .9;
+    background-color: #333;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1rem 2%;
+    font-size: 10pt;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: whitesmoke;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

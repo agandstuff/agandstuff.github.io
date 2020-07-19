@@ -1,0 +1,105 @@
+@media only screen and (min-width: 43rem) {
+    div#logoNav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    div#logoNav h1 {
+        padding-left: 50px;
+        align-self: flex-end;
+    }
+
+    div#logoNav nav button {
+        display: none;
+    }
+
+    div#logoNav nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        align-self: flex-end;
+    }
+
+    div#logoNav nav ul.hide {
+        display: flex;
+    }
+
+    div#logoNav nav ul {
+        display: flex;
+
+    }
+
+    div#logoNav nav ul li a {
+        text-align: center;
+        font-size: 12pt;
+        padding: .4rem;
+        margin: 0;
+        width: 100px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, autofit);
+        grid-template-rows: repeat(3, autofit);
+        text-align: center;
+        justify-content: center;
+    }
+
+    #intro {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    section#rentals {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.rental {
+        max-width: 250px;
+    }
+
+    section.weather {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding-top: 40px;
+    }
+
+    section#forecast {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #contactInfo {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        max-width: 315px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    #contactInfo article:first-child {
+        margin-left: 5rem;
+    }
+
+    article.shop p {
+        font-size: 10pt;
+    }
+
+    #contactPage {
+        display: grid;
+        grid-template-rows: 75px 50px 1fr 450px;
+        grid-template-columns: 1fr;
+    }
+
+    #contactPage #contactInfo {
+        grid-row: 4 / 5;
+    }
+
+    #contactPage article.blue div.map {
+        width: 90%;
+    }
+} /* end of media query */

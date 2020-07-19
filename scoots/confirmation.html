@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/medium/cozumel900.png">
+            <source media="(min-width: 900px)" srcset="images/large/cozumel1500.png">
+            <img src="images/original/cozumel.png" alt="Island of Cozumel">
+        </picture>
+        <div id="logoNav">
+            <img src="images/scoots_logo.png" alt="Scoots Logo">
+            <h1>Scoots</h1>
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html" id="red">Home</a></li>
+                    <li><a href="rentals.html" id="ora">Rentals</a></li>
+                    <li><a href="reservations.html" id="pur">Reservations</a></li>
+                    <li><a href="tours.html" id="gre">Tours</a></li>
+                    <li><a href="contacts.html" id="blu">Contact Us</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+    <main>
+        <div class="social">
+            <a href="https://www.facebook.com" target="blank"><img src="images/fb.png" alt="FaceBook Social Icon"></a>
+            <a href="https://www.twitter.com" target="blank"><img src="images/tw.png" alt="Twitter Social Icon"></a>
+            <a href="https://www.instagram.com" target="blank"><img src="images/in.png" alt="Instagram Social Icon"></a>
+            <a href="https://www.pinterest.com" target="blank"><img src="images/pi.png" alt="Pinterest Social Icon"></a>
+        </div>
+        <section id="intro">
+            <h2>Thank you!</h2>
+            <p>We have received your submission and will be contacting you shortly. </p><br><br><br>
+        </section>
+    </main>
+    <footer id="thanksFooter">
+        &copy; Amanda Stokes <span id="current-year"></span> | Last Updated: <span id="update-time"></span> | <a href="resources.html">Images and Weather References Page</a>
+    </footer>
+    <script src="js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load ({google: {families: ['Amatic SC','Oswald']}});</script>  
+</body>
+</html>

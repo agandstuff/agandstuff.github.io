@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/small/town500.jpg">
+            <source media="(max-width: 900px)" srcset="images/medium/town900.jpg">
+            <source media="(min-width: 900px)" srcset="images/large/town1500.jpg">
+            <img src="images/original/town.jpg" alt="Island Town with Locals">
+        </picture>
+        <div id="logoNav">
+            <img src="images/scoots_logo.png" alt="Scoots Logo">
+            <h1>Scoots</h1>
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html" id="red">Home</a></li>
+                    <li class="active"><a href="rentals.html" id="ora">Rentals</a></li>
+                    <li><a href="reservations.html" id="pur">Reservations</a></li>
+                    <li><a href="tours.html" id="gre">Tours</a></li>
+                    <li><a href="contacts.html" id="blu">Contact Us</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+    <main class="rentalsPage">
+        <div class="social">
+            <a href="https://www.facebook.com" target="blank"><img src="images/fb.png" alt="FaceBook Social Icon"></a>
+            <a href="https://www.twitter.com" target="blank"><img src="images/tw.png" alt="Twitter Social Icon"></a>
+            <a href="https://www.instagram.com" target="blank"><img src="images/in.png" alt="Instagram Social Icon"></a>
+            <a href="https://www.pinterest.com" target="blank"><img src="images/pi.png" alt="Pinterest Social Icon"></a>
+        </div>
+        <h2>Rental Information and Services</h2>
+        <article>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+        </article>
+        <section class="vehicles"></section>
+    </main>
+    <footer>
+        &copy; Amanda Stokes <span id="current-year"></span> | Last Updated: <span id="update-time"></span> | <a href="resources.html">Images and Weather References Page</a>
+    </footer>
+    <script src="js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load ({google: {families: ['Amatic SC','Oswald']}});</script>  
+</body>
+</html>

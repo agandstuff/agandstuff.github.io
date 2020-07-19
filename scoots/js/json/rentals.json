@@ -1,0 +1,63 @@
+{
+    "rentals":[
+        {
+            "name": "Honda Metropolitan",
+            "power": "49cc",
+            "photo": "hmetro.jpg",
+            "maxPersons": 1,
+            "reserveHalf": 20,
+            "reserveFull": 30,
+            "walkHalf": 25,
+            "walkFull": 35
+        },
+        {
+            "name": "Honda Dio",
+            "power": "110cc",
+            "photo": "hdio.jpg",
+            "maxPersons": 2,
+            "reserveHalf": 30,
+            "reserveFull": 40,
+            "walkHalf": 35,
+            "walkFull": 45
+        },
+        {
+            "name": "Honda PCX150",
+            "power": "149cc",
+            "photo": "hpcx.jpg",
+            "maxPersons": 2,
+            "reserveHalf": 40,
+            "reserveFull": 50,
+            "walkHalf": 45,
+            "walkFull": 55
+        },
+        {
+            "name": "Honda Pioneer 1000",
+            "photo": "atv.jpg",
+            "maxPersons": 4,
+            "reserveHalf": 50,
+            "reserveFull": 70,
+            "walkHalf": 60,
+            "walkFull": 80
+        },
+        {
+            "name": "Jeep Wrangler 2-Door",
+            "feature": "Open Air",
+            "photo": "2jeep.jpg",
+            "maxPersons": 4,
+            "reserveHalf": 60,
+            "reserveFull": 85,
+            "walkHalf": 70,
+            "walkFull": 90
+        },
+        {
+            "name": "Jeep Wrangler 4-Door",
+            "feature": "Manual with A/C",
+            "photo": "4jeep.jpg",
+            "maxPersons": 5,
+            "reserveHalf": 70,
+            "reserveFull": 100,
+            "walkHalf": 85,
+            "walkFull": 125
+        }
+    ]
+}
