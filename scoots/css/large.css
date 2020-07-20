@@ -54,16 +54,22 @@
 
     .rentalsPage {
         display: grid;
-        grid-template-columns: 500px 1fr;
+        grid-template-columns: 45% 1fr;
         grid-template-rows: 100px 350px 1fr;
     }
 
     .rentalsPage section.vehicles {
         grid-row: 2 / 3;
+        justify-self: left;
+    }
+
+    .rentalsPage section.vehicles table {
+        margin-left: 0;
     }
 
     .rentalsPage article {
-        margin-left: 6rem;
+        grid-column: 1 / 2;
+        justify-self: right;
     }
 
     .rentalsPage section#rentals {
