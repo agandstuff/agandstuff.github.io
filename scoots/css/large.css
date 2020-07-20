@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64rem) {
     div#logoNav {
         display: grid;
-        grid-template-columns: 60px, 1fr, 400px;
+        grid-template-columns: 60px 1fr 400px;
         grid-template-rows: 100px;
     }
 
