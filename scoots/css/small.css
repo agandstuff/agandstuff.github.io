@@ -143,6 +143,14 @@ main h2 {
     font-size: 30pt;
 }
 
+#intro {
+    padding: 1rem;
+}
+
+.extraPage {
+    display: block;
+}
+
 /* HOME - Social */
 .social {
     position: fixed;
@@ -301,14 +309,132 @@ article.shop h4 {
 }
 
 /* RENTAL MAIN */
+.rentalsPage table {
+    border: 2px solid #F18701;
+    margin: auto;
+    border-radius: 10pt;
+    padding: .8em;
+}
+
+.rentalsPage table th#title {
+    font-family: Amatic SC, sans-serif;
+    background-color: #F18701;
+    color: whitesmoke;
+    font-size: 22pt;
+    border-radius: 10pt;
+}
+
+.rentalsPage table tr#subhead1 {
+    font-family: Amatic SC, sans-serif;
+    font-size: 18pt;
+}
+
+.rentalsPage table tr#subhead2 {
+    font-family: Amatic SC, sans-serif;
+    background-color: #F18701;
+    color: whitesmoke;
+    font-size: 12pt;
+    padding: 1.5rem;
+}
+
+.rentalsPage table td {
+    font-size: 10pt;
+    padding: .6rem;
+    border-right: 1px solid #a55e00;
+}
+
+.rentalsPage table td:last-child {
+    border-right: none;
+}
+
 .rentalsPage article {
     text-align: left;
     background-color: #F18701;
     color: whitesmoke;
-    margin: 2rem 6%;
+    margin: 2rem 10%;
     border-radius: 12px;
     padding: .3rem;
     box-shadow: 0 0 2px 2px #a55e00;
+}
+
+.rentalsPage article ul {
+    padding-left: 20px;
+}
+
+.rentalsPage div.rental {
+    max-width: 300px;
+}
+
+.rentalsPage div.rental:hover {
+    box-shadow: 0 0 30px #a55e00;
+}
+
+/* RESERVATIONS MAIN */
+.reservationPage form {
+    margin: 1.5rem 8%;
+}
+
+.reservationPage form fieldset {
+    border: 2px solid #87247B;
+    margin-bottom: 1rem;
+}
+
+.reservationPage form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #333;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: .5rem;
+    color: #b670ae;
+    max-width: 20rem;
+}
+
+.reservationPage form input.submitButton {
+    background-color: #87247B;
+}
+
+.reservationPage form label textarea {
+    margin-top: .5rem;
+}
+
+/* TOURS MAIN */
+.toursPage p {
+    margin: 2rem 6%;
+}
+
+.toursPage figure {
+    max-width: 70%;
+    margin: auto;
+}
+
+.toursPage figure img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 2px 2px #333;
+    border-radius: 2px;
+}
+
+figcaption {
+    font-size: smaller;
+    padding-top: .2rem;
+    text-align: center;
+}
+
+.toursPage article {
+    background-color: #62B932;
+    padding: 2rem;
+    margin: 2rem 6%;
+    border-radius: 12pt;
+    box-shadow: 0 0 2px 2px #396e1c;
+    text-align: left;
+}
+
+.toursPage article figure {
+    float: right;
+    width: 225px;
+    margin-left: 1rem;
 }
 
 /* CONTACT MAIN */
@@ -346,6 +472,14 @@ form label.top input {
     color: #1b727e;
     width: 100%;
     max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: #f71b2e solid 5px;
+}
+
+form label.top input:required:valid {
+    border-left: #62B932 solid 5px;
 }
 
 form input.submitButton {

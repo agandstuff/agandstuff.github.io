@@ -68,7 +68,7 @@ fetch (apiURLforecast)
     });
 
 // rentals page table
-const requestVehicles = '/json/rentals.json';
+const requestVehicles = 'https://agandstuff.github.io/scoots/js/json/rentals.json';
 
 fetch(requestVehicles)
     .then(function(response) {
@@ -76,4 +76,80 @@ fetch(requestVehicles)
     })
     .then(function(jsonObject) {
         console.table(jsonObject);
+        const rental = jsonObject['rentals'];
+
+        let table = document.createElement('table');
+        let head = document.createElement('tr');
+        let title = document.createElement('th');
+        let subhead1 = document.createElement('tr');
+        let subtitle1a = document.createElement('th');
+        let subtitle1b = document.createElement('th');
+        let subtitle1c = document.createElement('th');
+        let subhead2 = document.createElement('tr');
+        let subtitle2a = document.createElement('th');
+        let subtitle2b = document.createElement('th');
+        let subtitle2c = document.createElement('th');
+        let subtitle2d = document.createElement('th');
+        let subtitle2e = document.createElement('th');
+        let subtitle2f = document.createElement('th');
+
+        title.textContent = "Max Persons and Price Chart (includes Tax)";
+        title.setAttribute('colspan', '6');
+        title.setAttribute('id', 'title');
+        subhead1.setAttribute('id', 'subhead1');
+        subhead2.setAttribute('id', 'subhead2');
+        subtitle1a.textContent = " ";
+        subtitle1a.setAttribute('colspan', '2');
+        subtitle1b.textContent = "Reservation";
+        subtitle1b.setAttribute('colspan', '2');        
+        subtitle1c.textContent = "Walk-In";
+        subtitle1c.setAttribute('colspan', '2');
+        subtitle2a.textContent = "Rental Type";
+        subtitle2b.textContent = "Max. Persons";
+        subtitle2c.textContent = "Half Day (3 hrs)";
+        subtitle2d.textContent = "Full Day";
+        subtitle2e.textContent = "Half Day (3 hrs)";
+        subtitle2f.textContent = "Full Day";
+
+        table.appendChild(head);
+        table.appendChild(subhead1);
+        table.appendChild(subhead2);
+        head.appendChild(title);
+        subhead1.appendChild(subtitle1a);
+        subhead1.appendChild(subtitle1b);
+        subhead1.appendChild(subtitle1c);
+        subhead2.appendChild(subtitle2a);
+        subhead2.appendChild(subtitle2b);
+        subhead2.appendChild(subtitle2c);
+        subhead2.appendChild(subtitle2d);
+        subhead2.appendChild(subtitle2e);
+        subhead2.appendChild(subtitle2f);
+
+        for (let i = 0; i < rental.length; i++) {
+            let row = document.createElement('tr');
+            let name = document.createElement('td');
+            let cap = document.createElement('td');
+            let rhalf = document.createElement('td');
+            let rfull = document.createElement('td');
+            let whalf = document.createElement('td');
+            let wfull = document.createElement('td');
+
+            name.textContent = rental[i].name;
+            cap.textContent = rental[i].maxPersons;
+            rhalf.textContent = "\$" + rental[i].reserveHalf;
+            rfull.textContent = "\$" + rental[i].reserveFull;
+            whalf.textContent = "\$" + rental[i].walkHalf;
+            wfull.textContent = "\$" +
+            rental[i].walkFull; 
+
+            table.appendChild(row);
+            row.appendChild(name);
+            row.appendChild(cap);
+            row.appendChild(rhalf);
+            row.appendChild(rfull);
+            row.appendChild(whalf);
+            row.appendChild(wfull);
+        }
+        
+        document.querySelector('section.vehicles').appendChild(table);
     });

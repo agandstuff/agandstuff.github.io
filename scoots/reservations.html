@@ -40,8 +40,62 @@
             <a href="https://www.instagram.com" target="blank"><img src="images/in.png" alt="Instagram Social Icon"></a>
             <a href="https://www.pinterest.com" target="blank"><img src="images/pi.png" alt="Pinterest Social Icon"></a>
         </div>
-        
-        
+        <h1>Make a Reservation</h1>
+        <form action="confirmation.html" method="get">
+            <fieldset>
+                <legend>Rental Type</legend>
+                <label class="top" required>Rental Type&ast;
+                    <select name="drive">
+                        <option value="" selected="" disabled>Select Vehicle...</option>
+                        <option value="metro">Honda Metropolitan</option>
+                        <option value="dio">Honda Dio</option>
+                        <option value="pcx">Honda PCX 150</option>
+                        <option value="atv">Honda Pioneer 1000 ATV</option>
+                        <option value="jeep2">Jeep Wrangler 2-Door</option>
+                        <option value="jeep4">Jeep Wrangler 4-Door</option>
+                    </select>
+                </label>
+                <label class="top" required>Rental Period&ast;
+                    <select name="period">
+                        <option value="" selected="" disabled>Select Option...</option>
+                        <option value="half">Half Day</option>
+                        <option value="full">Full Day</option>
+                    </select>
+                </label>
+                <label class="top">Date of Rental&ast; <br>
+                    Start: <input type="date" name="start" required> 
+                    End: <input type="date" name="end" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name&ast; <input type="text" name="fname" required pattern="[A-Za-z]{5,*}"></label>
+                <label class="top">Phone <input type="tel" name="tel" placeholder="xxx-xxx-xxxx"></label>
+                <label class="top">Email&ast; <input type="email" name="email" required placeholder="example@gmail.com">
+                </label>
+                <label class="top">Country of Origin
+                    <select name="country">
+                        <option value="" selected="" disabled>Select Option...</option>
+                        <option value="aus">Australia</option>
+                        <option value="bra">Brazil</option>
+                        <option value="canada">Canada</option>
+                        <option value="england">England</option>
+                        <option value="japan">Japan</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="other">Other</option>
+                        <option value="spain">Spain</option>
+                        <option value="us">United States of America</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Extras</legend>
+                <label class="top">Cruise Line, if applicable <input type="text" name="cruise"></label>
+                <label class="top">Additional Accommadation Requests <br>
+                <textarea name="comments" class="top" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Reserve Now" class="submitButton">
+        </form>
     </main>
     <footer>
         &copy; Amanda Stokes <span id="current-year"></span> | Last Updated: <span id="update-time"></span> | <a href="resources.html">Images and Weather References Page</a>
